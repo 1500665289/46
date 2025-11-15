@@ -1,0 +1,62 @@
+<ThingDefs><List>
+
+  <ThingDef Type="Building" Name="Building_AirConditioner" Parent="OrnamentBase">
+	<TexPath>Spr\Building\air.png</TexPath>
+	<TexScale>0.75</TexScale>
+	<ThingName>异界奇怪装置</ThingName>
+	<Desc>来自异世界的奇怪装置，启动后可以维持房间的温度。</Desc>
+	<ClassName>AirConditioner_Building</ClassName>
+	<ShadowSize>
+		<x>1</x>
+		<y>1.2</y>
+	</ShadowSize>
+	<ColliderKind>NoPass</ColliderKind>
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+		[3],
+		</Data>
+		<OffsetGroup>
+			<li><x>0</x><y>0.2</y></li>
+			<li><x>0.25</x><y>0.5</y></li>
+			<li><x>0</x><y>0.7</y></li>
+			<li><x>-0.25</x><y>0.5</y></li>
+		</OffsetGroup>
+	</Collider>
+	
+	<Building>
+    <NoFengshui>1</NoFengshui>
+		<BeMade>
+			<WorkToMake>125</WorkToMake>
+			<Quality>0</Quality>
+			<StuffCategories>
+				<Stuff name = "MetalBlock"/>
+				<Stuff name = "WoodBlock"/>
+				<Stuff name = "RockBlock"/>
+			</StuffCategories>
+			<CostStuffCount>99</CostStuffCount>
+		</BeMade>
+		<SnowRenderData>
+			<x>3</x>
+			<y>3.8</y>
+			<z>1</z>
+		</SnowRenderData>		
+	</Building>
+	<Element>
+		<Kind>None</Kind>
+		<Value>0</Value>         
+		<Radius>0</Radius>
+		<Failing>1</Failing>
+		<FailRadius>0</FailRadius>
+	</Element>
+	<Heat>
+		<Value>0</Value>
+		<Radius>5</Radius>
+		<RoomValue>0</RoomValue>
+		<Failing>1</Failing>
+		<FailRadius>1</FailRadius>
+	</Heat>
+	
+	</ThingDef>
+  
+</List></ThingDefs>
